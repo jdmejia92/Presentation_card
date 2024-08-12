@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Variables */
@@ -53,10 +54,55 @@ body {
   font-size: 2rem;
 }
 
+.jd-content-title {
+  font-size: 1.8rem;
+}
+
 .letter-content {
   color: var(--color-letras);
   text-shadow: 1px 1px 5px rgb(3, 3, 55);
+  font-size: 1.5rem;
 }
+
+@media (max-width: 1100px){
+  .jd-name {
+    font-size: 1.5rem;
+  }
+
+  .jd-content-title {
+    font-size: 1.2rem;
+  }
+
+  .letter-content {
+    font-size: 1.2rem;
+  }
+}
+
+.speciality {
+  background-color: rgb(8, 192, 205);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.git-icon-container {
+  height: 25px;
+}
+
+@media (max-width: 1300px){
+  .speciality {
+    font-size: 0.75rem;
+  }
+
+  .git-icon {
+    height: 0.75rem;
+  }
+
+  .git-icon-container {
+    height: 20px;
+  }
+}
+
+
 
 /* Foto */
 .jd-photo {
@@ -67,7 +113,7 @@ body {
 
 .jd-photo:hover {
   box-shadow: 1px 1px 25px var(--color-sombra);
-  transition: 0.2s;
+  transition-delay: 0.2s;
   height: 36dvh;
 }
 
@@ -75,11 +121,19 @@ body {
   .jd-photo {
     height: 30dvh;
   }
+
+  .jd-photo:hover {
+    height: 31dvh;
+  }
 }
 
 @media (max-width: 1100px){
   .jd-photo {
     height: 20dvh;
+  }
+
+  .jd-photo:hover {
+    height: 31dvh;
   }
 }
 
@@ -87,10 +141,16 @@ body {
   .jd-photo {
     height: 10dvh;
   }
+
+  .jd-photo:hover {
+    height: 11dvh;
+  }
 }
+
 
 /* Iconos */
 .hyperlink:hover {
   height: 55px;
   width: 55px;
+  transition-delay: 0.2s;
 }
