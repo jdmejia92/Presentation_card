@@ -1,0 +1,96 @@
+/* Reset */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Variables */
+:root {
+  --color-titulos: white;
+  --color-letras: rgb(44, 177, 186);
+  --color-sombra: lightblue;
+}
+
+/* Body */
+body {
+  background-image: url(https://i.redd.it/vxb5lk0zxra71.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100dvh;
+  min-width: 100dvw;
+}
+
+.jd-container{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  height: 50dvh;
+}
+
+@media (max-width: 800px){
+  .jd-container-top{
+    position: absolute;
+    top: 50px;
+    height: 40dvh;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 800px){
+  #jd-container-down{
+    position: absolute;
+    bottom: 50px;
+    margin-left: 48px;
+    height: 40dvh;
+    max-width: 70%;
+  }
+}
+
+/* Letras */
+.jd-name {
+  color: var(--color-titulos);
+  text-shadow: 1px 1px 5px black;
+  font-size: 2rem;
+}
+
+.letter-content {
+  color: var(--color-letras);
+  text-shadow: 1px 1px 5px rgb(3, 3, 55);
+}
+
+/* Foto */
+.jd-photo {
+  height: 35dvh;
+  border-radius: 180px;
+  box-shadow: 1px 1px 10px var(--color-sombra);
+}
+
+.jd-photo:hover {
+  box-shadow: 1px 1px 25px var(--color-sombra);
+  transition: 0.2s;
+  height: 36dvh;
+}
+
+@media (max-width: 1360px){
+  .jd-photo {
+    height: 30dvh;
+  }
+}
+
+@media (max-width: 1100px){
+  .jd-photo {
+    height: 20dvh;
+  }
+}
+
+@media (max-width: 490px){
+  .jd-photo {
+    height: 10dvh;
+  }
+}
+
+/* Iconos */
+.hyperlink:hover {
+  height: 55px;
+  width: 55px;
+}
